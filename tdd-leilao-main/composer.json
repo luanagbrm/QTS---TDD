@@ -1,0 +1,23 @@
+{
+    "name": "aluno/tdd-leilao",
+    "description": "Sistema de leilão desenvolvido em TDD",
+    "autoload": {
+        "psr-4": {
+            "Aluno\\TddLeilao\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Joia e Luana"
+        }
+    ],
+    "phpunit/php-code-coverage": "^4.0.3",
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    }
+}
