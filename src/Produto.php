@@ -6,7 +6,6 @@ namespace src;
         private int $id;
         private string $nome, $descricao, $fabricante;
         private float $lanceMinimo;
-        private array $lancesMaiores;
 
         public function __construct(int $id, string $nome, string $descricao, string $fabricante, float $lanceMinimo){
             $this->id = $id;
@@ -53,7 +52,7 @@ namespace src;
         }
 
         public function setFabricante($fabricante){
-            $this->fabricante = $fa;
+            $this->fabricante = $fabricante;
         }
 
         public function setLanceMinimo($lanceMinimo){
