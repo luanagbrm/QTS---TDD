@@ -1,7 +1,7 @@
 <?php
 namespace src;
 
-use Leilao;
+use src\Leilao;
 
     class Leiloeiro{
         private int $id;
@@ -16,14 +16,22 @@ use Leilao;
         $this->rg = $rg;
         $this->matricula = $matricula;
         $this->senha = $senha;
-    }    
+    }
+
+    public function getLeilao(){
+        return $this->leilao;
+    }
+
+    public function setLeilao(Leilao $leilao){
+        $this->leilao = $leilao;
+    }
     
     public function getId(){
-        return this->$id;
+        return $this->id;
     }
 
     public function getNome(){
-        return this->$nome;
+        return $this->nome;
     }
 
     public function setNome($nome){
@@ -31,7 +39,7 @@ use Leilao;
     }
 
     public function getRg(){
-        return this->$rg;
+        return $this->rg;
     }
 
     public function setRg($rg){
@@ -39,7 +47,7 @@ use Leilao;
     }
 
     public function getCpf(){
-        return this->$rg;
+        return $this->cpf;
     }
 
     public function setCpf($cpf){
@@ -47,7 +55,7 @@ use Leilao;
     }
 
     public function getMatricula(){
-        return this->$matricula;
+        return $this->matricula;
     }
 
     public function setMatricula($matricula){
@@ -55,7 +63,7 @@ use Leilao;
     }
 
     public function getSenha(){
-        return this->$senha;
+        return $this->senha;
     }
 
     public function setSenha($senha){
@@ -63,7 +71,7 @@ use Leilao;
     }
 
     public function getHistorico(){
-        return this->$historico;
+        return $this->historico;
     }
 
     }
